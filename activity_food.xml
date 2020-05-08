@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mutterpaneer"
+    tools:context=".food">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/backgroundopacity">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp">
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#27FFFFFF"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Dish"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#27FFFFFF"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Quantity"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#27FFFFFF"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="Price"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chole Bhature"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"/>
+
+
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+
+                        <Button
+                            android:id="@+id/less2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="-"
+                            android:onClick="res2less"/>
+
+                        <TextView
+                            android:id="@+id/tvqty2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:text="1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/add2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="res2add"
+                            android:text="+"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/tp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="70"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pav Bhaji"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"/>
+
+
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+
+                        <Button
+                            android:id="@+id/less3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="-"
+                            android:onClick="res3less"/>
+
+                        <TextView
+                            android:id="@+id/tvqty3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:text="1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/add3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="res3add"
+                            android:text="+"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/tp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="100"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/cb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aloo Tikki Burger"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"/>
+
+
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+
+                        <Button
+                            android:id="@+id/less4"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="-"
+                            android:onClick="res4less"/>
+
+                        <TextView
+                            android:id="@+id/tvqty4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:text="1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/add4"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="res4add"
+                            android:text="+"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/tp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="60"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/cb5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paneer Tikka Pizza"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"/>
+
+
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+
+                        <Button
+                            android:id="@+id/less5"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="-"
+                            android:onClick="res5less"/>
+
+                        <TextView
+                            android:id="@+id/tvqty5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:text="1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/add5"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="res5add"
+                            android:text="+"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/tp5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="210"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Red Sauce Pasta"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"/>
+
+
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+
+                        <Button
+                            android:id="@+id/less"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="-"
+                            android:onClick="res1less"/>
+
+                        <TextView
+                            android:id="@+id/tvqty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:text="1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+
+                        <Button
+                            android:id="@+id/add"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="res1add"
+                            android:text="+"
+                            android:textSize="10sp" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/tp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="150"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow>
+
+
+                <Button
+                    android:id="@+id/order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order"
+                    android:onClick="order"
+                    android:layout_margin="30dp"
+                    android:background="@color/endcolorgradient"
+                    android:gravity="center"/>
+
+
+            </TableRow>
+
+
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
